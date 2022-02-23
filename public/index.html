@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title></title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">home</a>
+        <a
+          href="#calculator"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >calculator</a
+        >
+        <a
+          href="#cloud"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >cloud</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >contact</a
+        >
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            more <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">agify</a>
+            <a href="#" class="w3-bar-item w3-button">ascii</a>
+          </div>
+        </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-search"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div
+      id="navDemo"
+      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+      style="margin-top: 46px"
+    >
+      <a
+        href="#calculator"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >calculator</a
+      >
+      <a
+        href="#cloud"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >cloud</a
+      >
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >contact</a
+      >
+      <a
+        href="#"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >start</a
+      >
+    </div>
+
+    <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+      <!-- The calculator Section -->
+      <div
+        class="w3-container w3-content w3-center w3-padding-64"
+        style="max-width: 800px"
+        id="calculator"
+      >
+        <h2 class="w3-wide">calculator</h2>
+        <p class="w3-opacity"><i>calculate</i></p>
+        <div class="w3-row w3-padding-32"></div>
+      </div>
+
+      <!-- The cloud Section -->
+      <div class="w3-black" id="cloud">
+        <div
+          class="w3-container w3-content w3-padding-64"
+          style="max-width: 800px"
+        >
+          <h2 class="w3-wide w3-center">cloud</h2>
+
+          <ul class="w3-ul w3-border w3-white w3-text-grey">
+            <li class="w3-padding">stackoverflow</li>
+            <li class="w3-padding">github</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- The Contact Section -->
+      <div
+        class="w3-container w3-content w3-padding-64"
+        style="max-width: 800px"
+        id="contact"
+      >
+        <h2 class="w3-wide w3-center">contact</h2>
+        <p class="w3-opacity w3-center"><i>drop a note</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width: 30px"></i> hepberg, de<br />
+            <i class="fa fa-envelope" style="width: 30px"> </i> email: see
+            contact form<br />
+          </div>
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input
+                    class="w3-input w3-border"
+                    type="text"
+                    placeholder="name"
+                    name="Name"
+                  />
+                </div>
+                <div class="w3-half">
+                  <input
+                    class="w3-input w3-border"
+                    type="text"
+                    placeholder="email"
+                    name="Email"
+                  />
+                </div>
+              </div>
+              <input
+                class="w3-input w3-border"
+                type="text"
+                placeholder="message"
+                required
+                name="Message"
+              />
+              <button
+                class="w3-button w3-black w3-section w3-right"
+                type="submit"
+              >
+                send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"
+    >
+      <p class="w3-medium">
+        <a href="https://tik9.herokuapp.com" target="_blank">tiko at heroku</a>
+      </p>
+    </footer>
+  </body>
+</html>
